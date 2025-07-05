@@ -87,7 +87,7 @@ const Footer = () => {
           >
             <NavLink to="/">
               <LogoContainer>
-                <p>Tu Logo Aquí</p>
+                <p>Hecho con ❤️ por <a href="https://www.craftia.com.mx" target="_blank" rel="noopener noreferrer">Craftia</a></p>
               </LogoContainer>
             </NavLink>
             <FooterContainer>
