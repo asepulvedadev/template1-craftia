@@ -14,6 +14,7 @@ export interface SvgIconProps {
   src: string;
   width: string;
   height: string;
+  ariaLabel?: string;
 }
 
 export interface InputProps {
