@@ -1,5 +1,4 @@
 import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
@@ -10,7 +9,7 @@ import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
-const Contact = ({ title, content, id, t }: ContactProps) => {
+const Contact = ({ title, content, id }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
@@ -33,7 +32,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="Tu Nombre"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -43,7 +42,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Tu Email"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -51,7 +50,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <TextArea
-                  placeholder="Your Message"
+                  placeholder="Tu Mensaje"
                   value={values.message || ""}
                   name="message"
                   onChange={handleChange}
@@ -59,7 +58,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <ValidationType type="message" />
               </Col>
               <ButtonContainer>
-                <Button name="submit">{t("Submit")}</Button>
+                <Button name="submit">Enviar</Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>
@@ -69,4 +68,4 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   );
 };
 
-export default withTranslation()(Contact);
+export default Contact;

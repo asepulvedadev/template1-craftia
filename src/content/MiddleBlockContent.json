@@ -1,6 +1,5 @@
 {
-    "title": "Introduce your product quickly & effectively",
-    "text": "Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.",
-    "button": "Get started"
+    "title": "Presenta tu producto de forma rápida y efectiva",
+    "text": "Esta plantilla facilita la gestión de contenido a través de archivos JSON, permitiéndote modificar los textos sin necesidad de conocimientos previos en desarrollo con React.js.",
+    "button": "Comenzar"
   }
-  
